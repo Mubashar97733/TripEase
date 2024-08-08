@@ -1,6 +1,7 @@
 <?php
 
 include("connection.php");
+
 $page = basename($_SERVER['PHP_SELF']);
 session_start();
 
