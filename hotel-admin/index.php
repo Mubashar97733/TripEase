@@ -3,11 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php page_head("../admin/"); ?>
+	<?php page_head($path); ?>
 	<title>Admin Dashboard | Hotel Management</title>
 </head>
 <body>
-	<?php loader("../admin/"); ?>
+	<?php loader($path); ?>
 
 	<div class="header">
 		<div class="header-left">
@@ -69,42 +69,42 @@
 							<ul>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/img.jpg" alt="">
 										<h3>John Doe</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/photo1.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/photo1.jpg" alt="">
 										<h3>Lea R. Frith</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/photo2.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/photo2.jpg" alt="">
 										<h3>Erik L. Richards</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/photo3.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/photo3.jpg" alt="">
 										<h3>John Doe</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/photo4.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/photo4.jpg" alt="">
 										<h3>Renee I. Hansen</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
 								</li>
 								<li>
 									<a href="#">
-										<img src="vendors/images/img.jpg" alt="">
+										<img src="<?php echo $path; ?>vendors/images/img.jpg" alt="">
 										<h3>Vicki M. Coleman</h3>
 										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed...</p>
 									</a>
@@ -118,7 +118,7 @@
 				<div class="dropdown">
 					<a class="dropdown-toggle" href="#" role="button" data-toggle="dropdown">
 						<span class="user-icon">
-							<img src="vendors/images/photo1.jpg" alt="">
+							<img src="<?php echo $path; ?>vendors/images/photo1.jpg" alt="">
 						</span>
 						<span class="user-name">Ross C. Lopez</span>
 					</a>
@@ -131,7 +131,7 @@
 				</div>
 			</div>
 			<div class="github-link">
-				<a href="https://github.com/dropways/deskapp" target="_blank"><img src="vendors/images/github.svg" alt=""></a>
+				<a href="https://github.com/dropways/deskapp" target="_blank"><img src="<?php echo $path; ?>vendors/images/github.svg" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -214,8 +214,8 @@
 	<div class="left-side-bar">
 		<div class="brand-logo">
 			<a href="index.html">
-				<img src="vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
-				<img src="vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
+				<img src="<?php echo $path; ?>vendors/images/deskapp-logo.svg" alt="" class="dark-logo">
+				<img src="<?php echo $path; ?>vendors/images/deskapp-logo-white.svg" alt="" class="light-logo">
 			</a>
 			<div class="close-sidebar" data-toggle="left-sidebar-close">
 				<i class="ion-close-round"></i>
@@ -403,7 +403,7 @@
 					<li>
 						<a href="https://dropways.github.io/deskapp-free-single-page-website-template/" target="_blank" class="dropdown-toggle no-arrow">
 							<span class="micon dw dw-paper-plane1"></span>
-							<span class="mtext">Landing Page <img src="vendors/images/coming-soon.png" alt="" width="25"></span>
+							<span class="mtext">Landing Page <img src="<?php echo $path; ?>vendors/images/coming-soon.png" alt="" width="25"></span>
 						</a>
 					</li>
 				</ul>
@@ -414,10 +414,10 @@
 
 	<div class="main-container">
 		<div class="pd-ltr-20">
-			<div class="card-box pd-20 height-100-p mb-30">
+			<div class="card-box pd-20   mb-30">
 				<div class="row align-items-center">
 					<div class="col-md-4">
-						<img src="vendors/images/banner-img.png" alt="">
+						<img src="<?php echo $path; ?>vendors/images/banner-img.png" alt="">
 					</div>
 					<div class="col-md-8">
 						<h4 class="font-20 weight-500 mb-10 text-capitalize">
@@ -429,7 +429,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-3 mb-30">
-					<div class="card-box height-100-p widget-style1">
+					<div class="card-box   widget-style1">
 						<div class="d-flex flex-wrap align-items-center">
 							<div class="progress-data">
 								<div id="chart"></div>
@@ -442,7 +442,7 @@
 					</div>
 				</div>
 				<div class="col-xl-3 mb-30">
-					<div class="card-box height-100-p widget-style1">
+					<div class="card-box   widget-style1">
 						<div class="d-flex flex-wrap align-items-center">
 							<div class="progress-data">
 								<div id="chart2"></div>
@@ -455,7 +455,7 @@
 					</div>
 				</div>
 				<div class="col-xl-3 mb-30">
-					<div class="card-box height-100-p widget-style1">
+					<div class="card-box   widget-style1">
 						<div class="d-flex flex-wrap align-items-center">
 							<div class="progress-data">
 								<div id="chart3"></div>
@@ -468,7 +468,7 @@
 					</div>
 				</div>
 				<div class="col-xl-3 mb-30">
-					<div class="card-box height-100-p widget-style1">
+					<div class="card-box   widget-style1">
 						<div class="d-flex flex-wrap align-items-center">
 							<div class="progress-data">
 								<div id="chart4"></div>
@@ -483,13 +483,13 @@
 			</div>
 			<div class="row">
 				<div class="col-xl-8 mb-30">
-					<div class="card-box height-100-p pd-20">
+					<div class="card-box   pd-20">
 						<h2 class="h4 mb-20">Activity</h2>
 						<div id="chart5"></div>
 					</div>
 				</div>
 				<div class="col-xl-4 mb-30">
-					<div class="card-box height-100-p pd-20">
+					<div class="card-box   pd-20">
 						<h2 class="h4 mb-20">Lead Target</h2>
 						<div id="chart6"></div>
 					</div>
@@ -512,7 +512,7 @@
 					<tbody>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/product-1.jpg" width="70" height="70" alt="">
+								<img src="<?php echo $path; ?>vendors/images/product-1.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
 								<h5 class="font-16">Shirt</h5>
@@ -537,7 +537,7 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/product-2.jpg" width="70" height="70" alt="">
+								<img src="<?php echo $path; ?>vendors/images/product-2.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
 								<h5 class="font-16">Boots</h5>
@@ -562,7 +562,7 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/product-3.jpg" width="70" height="70" alt="">
+								<img src="<?php echo $path; ?>vendors/images/product-3.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
 								<h5 class="font-16">Hat</h5>
@@ -587,7 +587,7 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/product-4.jpg" width="70" height="70" alt="">
+								<img src="<?php echo $path; ?>vendors/images/product-4.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
 								<h5 class="font-16">Long Dress</h5>
@@ -612,7 +612,7 @@
 						</tr>
 						<tr>
 							<td class="table-plus">
-								<img src="vendors/images/product-5.jpg" width="70" height="70" alt="">
+								<img src="<?php echo $path; ?>vendors/images/product-5.jpg" width="70" height="70" alt="">
 							</td>
 							<td>
 								<h5 class="font-16">Blazer</h5>
@@ -638,11 +638,9 @@
 					</tbody>
 				</table>
 			</div>
-			<div class="footer-wrap pd-20 mb-20 card-box">
-				DeskApp - Bootstrap 4 Admin Template By <a href="https://github.com/dropways" target="_blank">Ankit Hingarajiya</a>
-			</div>
+			<?php footer(); ?>
 		</div>
 	</div>
-	<?php page_script("../admin/"); ?>
+	<?php page_script($path); ?>
 </body>
 </html>
